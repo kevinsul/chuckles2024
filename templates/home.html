@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        form {
+            text-align: center;
+            display: inline-block;
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            text-align: center;
+            background-color: black;
+            color:  red
+        }
+        </style>
+    <title>Chuckles the Clown</title>
+</head>
+<body>
+    <h1>Chuckles the Clown's Fun Page </h1>
+<br>
+<br>
+
+<form method="POST" action="{{ url_for('firebutton')  }}">
+    <button type="submit">Fire</button>&nbsp;
+</form>
+<form method="POST" action="{{ url_for('smokebutton')  }}">
+    <button type="submit">Smoke</button>&nbsp;
+</form>
+<form method="POST" action="{{ url_for('hornbutton')  }}">
+    <button type="submit">Horn</button>&nbsp;
+</form>
+<form method="POST" action="{{ url_for('donotpressbutton')  }}">
+    <button type="submit">DO NOT PRESS</button>&nbsp;
+</form><br><br>
+<img src="/static/chuckles24.png" alt="Image" style="display: block; margin: 0 auto; width: 30%;">
+
+
+
+
+</body>
+</html>
